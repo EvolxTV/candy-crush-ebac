@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="main.css" />
+    <title>Candy Crush</title>
+  </head>
+  <body>
+    <header class="navbar navbar-expand-lg sticky-top py-4" id="cabecalho">
+      <div class="container">
+        <img
+          src="./images/logo/king.png"
+          class="navbar-brand"
+          id="logo"
+          alt=""
+        />
+        <button
+          type="button"
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#menu-navegacao"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <nav
+          class="navbar-collapse collapse justify-content-end"
+          id="menu-navegacao"
+        >
+          <ul class="nav nav-pills d-block d-md-flex text-center mt-3 mt-md-0">
+            <li class="nav-item">
+              <a href="#sobre" class="nav-link fw-bold active">
+                <i class="bi bi-house"></i>
+                Sobre
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#news" class="nav-link fw-bold">
+                <i class="bi bi-newspaper"></i>
+                News
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#games" class="nav-link fw-bold">
+                <i class="bi bi-controller"></i>
+                Jogos
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#fale-conosco" class="nav-link fw-bold">
+                <i class="bi bi-chat-left-text me-1"></i>
+                Fale conosco
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div data-bs-spy="scroll" data-bs-target="#cabecalho" data-bs-smooth-scroll="true">
+      <section id="sobre">
+        <div
+          class="carousel slide"
+          id="carousel"
+          data-bs-ride="carousel"
+          data-bs-theme="dark"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="2000">
+              <img src="./images/slides/855981.png" class="carousel-img" alt="" />
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img
+                class="carousel-img"
+                src="./images/slides/cropped-1920-1080-900929.jpg"
+                alt=""
+              />
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img
+                class="carousel-img"
+                src="./images/slides/cropped-1920-1080-855984.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+          <button
+            type="button"
+            class="carousel-control-prev"
+            data-bs-slide="prev"
+            data-bs-target="#carousel"
+          >
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button
+            type="button"
+            class="carousel-control-next"
+            data-bs-slide="next"
+            data-bs-target="#carousel"
+          >
+            <span class="carousel-control-next-icon"></span>
+          </button>
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              class="active"
+              data-bs-target="#carousel"
+              data-bs-slide-to="0"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carousel"
+              data-bs-slide-to="1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carousel"
+              data-bs-slide-to="2"
+            ></button>
+          </div>
+        </div>
+        <div class="py-5">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12 col-lg-7 d-flex align-items-center justify-content-center">
+                <img
+                  id="main-section-img"
+                  src="./images/secton img/1.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="col-md-12 col-lg-5 py-5 py-lg-0">
+                <h2 class="candy-font text-center main-section-title">
+                  Play the <span class="colored-text">sweetest game...</span>
+                </h2>
+                <p class="main-section-paragraph">
+                  Play Candy Crush Saga and switch and match your way through
+                  hundreds of levels in this divine puzzle adventure. Join Tiffi
+                  and Mr. Toffee on their epic journey in an online game full of
+                  delicious treats! Ain't it the sweetest game ever?
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="news" class="py-0 py-lg-0">
+        <div class="container">
+          <h2 class="candy-font fs-1 text-center">
+            Ultimas <span class="colored-text"> Noticias</span>
+          </h2>
+          <div class="row py-5">
+            <div class="col-md-6 col-lg-4">
+              <article class="card bg-candycard mb-3">
+                <img src="./images/articles/1.jpg" class="img-size" alt="" />
+                <div class="card-body">
+                  <h5 class="card-title fw-bold fs-4 colored-text-news">
+                    Candy Crush Saga hits $20 billion revenue milestone
+                  </h5>
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Consequuntur, officia saepe accusamus nostrum neque unde.
+                  </p>
+                </div>
+                <div class="d-flex justify-content-center py-3">
+                  <button class="btn btn-candy fw-bold w-50" type="button">
+                    Leia mais
+                  </button>
+                </div>
+              </article>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <article class="card bg-candycard mb-3">
+                <img src="./images/articles/2.webp" class="img-size" alt="" />
+                <div class="card-body">
+                  <h5 class="card-title fw-bold fs-4 colored-text-news">
+                    Candy Crush Saga hits $20 billion revenue milestone
+                  </h5>
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Consequuntur, officia saepe accusamus nostrum neque unde.
+                  </p>
+                </div>
+                <div class="d-flex justify-content-center py-3">
+                  <button class="btn btn-candy fw-bold w-50" type="button">
+                    Leia mais
+                  </button>
+                </div>
+              </article>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <article class="card bg-candycard mb-3">
+                <img src="./images/articles/3.avif" class="img-size" alt="" />
+                <div class="card-body">
+                  <h5 class="card-title fw-bold fs-4 colored-text-news">
+                    Candy Crush Saga hits $20 billion revenue milestone
+                  </h5>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Praesentium dicta culpa veniam odio reiciendis. Eaque.
+                  </p>
+                </div>
+                <div class="d-flex justify-content-center py-3">
+                  <button class="btn btn-candy fw-bold w-50" type="button">
+                    Leia mais
+                  </button>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="games">
+        <div class="container">
+          <div class="row py-5">
+            <h2 class="candy-font fs-1 text-center">
+              Os <span class="colored-text">Jogos</span>
+            </h2>
+          </div>
+          <div class="row justify-content-center">
+            <aside class="col-md-12 col-lg-2">
+              <nav class="nav nav-pills flex-column ">
+                <button
+                  type="button"
+                  class="nav-link fw-bold text-lg-start text-md-center active"
+                  data-bs-toggle="tab"
+                  data-bs-target="#cc-saga"
+                >
+                  Candy Crush Saga
+                </button>
+                <button
+                  type="button"
+                  class="nav-link fw-bold text-lg-start text-md-center"
+                  data-bs-toggle="tab"
+                  data-bs-target="#cc-soda-saga"
+                >
+                  Candy Crush Soda Saga
+                </button>
+                <button
+                  type="button"
+                  class="nav-link fw-bold text-lg-start text-md-center"
+                  data-bs-toggle="tab"
+                  data-bs-target="#cc-jelly-saga"
+                >
+                  Candy Crush Jelly Saga
+                </button>
+                <button
+                  type="button"
+                  class="nav-link fw-bold text-lg-start text-md-center"
+                  data-bs-toggle="tab"
+                  data-bs-target="#cc-friends-saga"
+                >
+                  Candy Crush Friends Saga
+                </button>
+              </nav>
+            </aside>
+            <div class="col-md-10">
+              <div class="tab-content">
+                <div class="tab-pane active" id="cc-saga">
+                  <div class="row">
+                    <div class="col text-center bg-body">
+                      <img src="./images/Games/1.png" class="w-75" alt="" />
+                      <h2 class="candy-font colored-text">Candy Crush Saga</h2>
+                      <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat tempora velit, perferendis, porro ut sapiente tempore odio sunt temporibus maxime fuga ipsa obcaecati dolorum. Ducimus in, nesciunt aut praesentium quos consequuntur voluptatem voluptatum odio, eos sapiente esse veniam quis optio maxime? Dolore libero non cumque doloremque error facere amet temporibus est quibusdam. Cumque at possimus consectetur, a rerum sed laboriosam dolorem iste impedit debitis nobis tempore necessitatibus ratione voluptatibus veritatis placeat ea eligendi inventore esse quas similique. Dolorum excepturi, voluptate deserunt in doloremque vel nulla esse numquam maiores modi illo impedit aut quam commodi quisquam optio provident nemo iure expedita.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <div class="tab-content">
+              <div class="tab-pane" id="cc-soda-saga">
+                <div class="row">
+                  <div class="text-center bg-body">
+                    <img src="./images/Games/soda saga.jpg" class="w-50" alt="" />
+                    <h2 class="candy-font colored-text">Candy Crush Soda Saga</h2>
+                    <p>
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur fugiat omnis, magni enim temporibus distinctio, est excepturi hic velit autem aliquam esse odio commodi non! Ab quisquam quibusdam vero debitis, blanditiis et provident eveniet repellat molestiae voluptatibus error, earum eos ad facere unde est voluptatem aspernatur optio doloremque dolores harum, corrupti fugit inventore amet? Hic cum temporibus labore modi similique harum, asperiores ipsam possimus. Itaque deserunt, quibusdam a corporis iste quo! Ipsum praesentium excepturi ducimus..
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-content">
+              <div class="tab-pane" id="cc-jelly-saga">
+                <div class="row">
+                  <div class="col text-center bg-body">
+                    <img src="./images/Games/jellysaga.png" class="w-50" alt="" />
+                    <h2 class="candy-font colored-text">
+                      Candy Crush Jelly Saga
+                    </h2>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus nisi eveniet, id minima ab, obcaecati commodi eius qui cumque assumenda aliquam facere incidunt, unde magni quo dolor iure? Praesentium dolores dolore laboriosam alias dignissimos, accusantium perferendis optio ipsam, necessitatibus aliquam quisquam consectetur totam nulla veritatis corrupti. Culpa nulla voluptatibus vero, necessitatibus nihil, vitae esse totam numquam error dolorum modi labore, mollitia facilis inventore ex ea ullam adipisci. Dolorum blanditiis, vitae sed, soluta, quisquam eligendi perspiciatis tempore sit voluptatum expedita dolores.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-content">
+              <div class="tab-pane" id="cc-friends-saga">
+                <div class="row">
+                  <div class="col text-center bg-body">
+                    <img
+                      src="./images/Games/Candy_Crush_Friends_Saga.webp"
+                      class="w-50"
+                      alt=""
+                    />
+                    <h2 class="candy-font colored-text">
+                      Candy Crush Friends Saga
+                    </h2>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus sapiente eius dolorem quas itaque modi obcaecati voluptate sit earum possimus soluta rem dicta, fuga fugiat quos voluptatem asperiores recusandae? Quisquam maxime quasi, cum nihil quia rerum neque sit officiis debitis quaerat illum error magni quod maiores laborum in labore commodi sunt aspernatur illo? Debitis, placeat error.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="py-5" id="fale-conosco">
+        <div class="container">
+          <div class="row mt-5">
+            <h2 class="candy-font fs-1 text-center">
+              Fale <span class="colored-text">conosco</span>
+            </h2>
+            <div class="row mt-5">
+              <div class="col-md-7 mb-5">
+                <form>
+                  <div class="mb-3">
+                    <label for="nome" class="form-label fw-bold colored-text"
+                      >Seu nome:</label
+                    >
+                    <input
+                      type="text"
+                      name="nome"
+                      class="form-control"
+                      required
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="email" class="form-label fw-bold colored-text"
+                      >Seu e-mail:</label
+                    >
+                    <input
+                      type="email"
+                      name="email"
+                      class="form-control"
+                      required
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="tel" class="form-label fw-bold colored-text"
+                      >Seu telefone (Opcional)</label
+                    >
+                    <input
+                      type="tel"
+                      name="tel"
+                      id="telefone"
+                      class="form-control"
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label
+                      for="mensagem"
+                      class="form-label fw-bold colored-text"
+                      >Seu mensagem:</label
+                    >
+                    <textarea
+                      required
+                      name="mensagem"
+                      id="mensagem"
+                      class="form-control"
+                    ></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-candy fw-bold">Enviar</button>
+                </form>
+              </div>
+              <div class="col-md-5">
+                <div class="row">
+                  <h3 class="section-title fs-4 colored-text">
+                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                    Redes sociais
+                  </h3>
+                  <ul class="social-links">
+                    <li class="fs-5">
+                      <a href="#">
+                        <i class="bi bi-facebook colored-text"></i>
+                      </a>
+                    </li>
+                    <li class="fs-5 mx-2">
+                      <a href="#">
+                        <i class="bi bi-instagram colored-text"></i>
+                      </a>
+                    </li>
+                    <li class="fs-5">
+                      <a href="#">
+                        <i class="bi bi-whatsapp colored-text"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="row mt-5">
+                  <h3 class="section-title fs-4 colored-text">
+                    <i class="bi bi-cursor-fill"></i>
+                    Endereço
+                  </h3>
+                  <p class="colored-text-news">
+                    Rua Candy Crush n 65, Bairro King games - Doçura/DC
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    
+
+    <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
